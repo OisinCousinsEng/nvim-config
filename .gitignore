@@ -1,0 +1,12 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# per-machine overrides (gitignored on purpose, see lua/config/options.lua)
+*.local.lua
+*.local.json
