@@ -20,7 +20,8 @@ else
   git pull --rebase
 fi
 
-# Sync plugins to the locked versions, then install any new mason tools.
-nvim --headless "+Lazy restore" "+MasonInstallAll" +qa
+# Sync plugins to the locked versions. Mason tools auto-install from
+# `ensure_installed` in lua/plugins/mason.lua when nvim starts.
+nvim --headless "+Lazy restore" +qa
 
 echo "nvim config synced"
