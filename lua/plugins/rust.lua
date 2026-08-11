@@ -1,5 +1,13 @@
 return {
   {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        rust = { "rustfmt", lsp_format = "fallback" },
+      },
+    },
+  },
+  {
     "mrcjkb/rustaceanvim",
     opts = function(_, opts)
       local ra = opts.server.default_settings["rust-analyzer"]
